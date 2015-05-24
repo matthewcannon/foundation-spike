@@ -1,9 +1,9 @@
 @import "foundation";
 
 @mixin side-panel {
-    @extend .medium-3, .large-4, .column, .show-for-medium-up;
+    @extend .medium-3, .large-3, .column, .show-for-medium-up;
 }
 
 @mixin content-panel {
-    @extend .small-12, .medium-6, .large-4, .column;
+    @extend .small-12, .medium-6, .large-6, .column;
 }
