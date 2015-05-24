@@ -1,11 +1,8 @@
-/* responsive */
-@import "responsive";
-
-/* vendor overrides */
-@import "foundation-overrides";
-
-/* vendor */
-// @import "";
-
-/* custom */
+@import "normalize";
+@import "foundation/settings";
+@import "foundation";
 @import "component";
+
+.column {
+    min-height: 1px;
+}

@@ -1,9 +1,9 @@
-// @import "bootstrap";
+@import "foundation";
 
 @mixin side-panel {
-    @extend .column, .col-xs-1, .col-sm-3, .col-md-4, .col-lg-4, .phone-hidden;
+    @extend .medium-3, .large-4, .column, .show-for-medium-up;
 }
 
 @mixin content-panel {
-    @extend .column, .col-xs-12, .col-sm-6, .col-md-4, .col-lg-4;
+    @extend .small-12, .medium-6, .large-4, .column;
 }

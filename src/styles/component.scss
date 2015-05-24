@@ -1,19 +1,17 @@
 @import "layout";
 
 article {
-    aside {
-        @include side-panel;
-    }
     section {
-        // @include make-row;
+        @include grid-row;
+        aside {
+            @include side-panel;
+        }
         .content {
             @include content-panel;
         }
-        .control {
-            @extend .form-control;
-        }
-        label {
-            font-weight: normal !important;
-        }
+        // label {
+        //     font-weight: normal !important;
+        // }
+   
     }
 }
