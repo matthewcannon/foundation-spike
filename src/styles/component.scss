@@ -1,17 +1,20 @@
 @import "layout";
 
+aside {
+    @include side-panel;
+}
+
 article {
+    @include grid-row;
     section {
-        @include grid-row;
-        aside {
-            @include side-panel;
-        }
-        .content {
-            @include content-panel;
-        }
-        // label {
-        //     font-weight: normal !important;
-        // }
-   
+        @include content;
     }
+}
+
+.cta, .cta-primary, .cta-secondary {
+    @extend .expand, .radius;
+}
+
+.cta-secondary {
+    @extend .secondary;
 }
