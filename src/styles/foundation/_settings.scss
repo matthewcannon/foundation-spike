@@ -119,8 +119,8 @@ $white: #FFFFFF;
 
 // We use these as default colors throughout
 $primary-color: #98cb00;
+$secondary-color: $white;
 
-// $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -454,7 +454,8 @@ $header-font-color: #002663;
 // We use these to control button text styles.
 // $button-font-family: $body-font-family;
 // $button-font-color: $white;
-// $button-font-color-alt: $oil;
+$button-font-color-alt: $primary-color;
+
 // $button-font-tny: rem-calc(11);
 // $button-font-sml: rem-calc(13);
 // $button-font-med: rem-calc(16);
@@ -464,17 +465,19 @@ $button-font-weight: $font-weight-bold;
 // $button-font-align: center;
 
 // We use these to control various hover effects.
-// $button-function-factor: -20%;
+$button-function-factor: -10%;
 
 // We use these to control button border styles.
 $button-border-width: 3;
 
 // $button-border-style: solid;
-// $button-bg-color: $primary-color;
-// $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
+$button-bg-color: $primary-color;
+$button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
+
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
-// $secondary-button-border-color: $secondary-button-bg-hover;
+$secondary-button-border-color: $primary-color;
+
 // $success-button-bg-hover: scale-color($success-color, $lightness: $button-function-factor);
 // $success-button-border-color: $success-button-bg-hover;
 // $alert-button-bg-hover: scale-color($alert-color, $lightness: $button-function-factor);
@@ -656,7 +659,7 @@ $form-label-font-color: #555555;
 // $input-bg-color: $white;
 $input-focus-bg-color: $white;
 $input-border-color: #d9d9d9;
-$input-focus-border-color: scale-color($input-border-color, $lightness: -40%);
+$input-focus-border-color: scale-color($input-border-color, $lightness: -25%);
 
 // $input-border-style: solid;
 // $input-border-width: 1px;
