@@ -12,7 +12,7 @@ article {
 }
 
 .cta, .cta-primary, .cta-secondary {
-    @extend .expand, .radius;
+    @extend .small, .expand, .radius;
 }
 
 .cta-secondary {

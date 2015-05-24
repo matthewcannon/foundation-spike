@@ -712,8 +712,8 @@ $input-focus-border-color: scale-color($input-border-color, $lightness: -25%);
 // $input-transition-fade-timing-function: linear;
 
 // Select variables
-// $select-bg-color: $ghost;
-// $select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%);
+$select-bg-color: $white;
+$select-hover-bg-color: $white;
 
 // 12. Icon Bar
 // - - - - - - - - - - - - - - - - - - - - - - - - -
