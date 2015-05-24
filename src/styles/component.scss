@@ -1,0 +1,19 @@
+@import "layout";
+
+article {
+    aside {
+        @include side-panel;
+    }
+    section {
+        // @include make-row;
+        .content {
+            @include content-panel;
+        }
+        .control {
+            @extend .form-control;
+        }
+        label {
+            font-weight: normal !important;
+        }
+    }
+}
