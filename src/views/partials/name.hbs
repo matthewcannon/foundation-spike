@@ -1,6 +1,7 @@
 <article>
     <aside></aside>
-    <section>
+    <!-- <form data-abide> -->
+    <section data-abide>
         <label for="title">What is your title?</label>
         <select id="title">
             <option disabled selected>Please select...</option>
@@ -8,12 +9,19 @@
             <option>{{this}}</option>
             {{/each}}
         </select>
-        <label for="first-name">What is your first name?</label>
-        <input type="text" id="first-name" placeholder="Enter your first name"></input>
-        <label for="surname">What is your surname?</label>
-        <input type="text" id="surname" placeholder="Enter your surname"></input>
-        <label for="middle-name">What is your middle name? (optional)</label>
-        <input type="text" id="middle-name" placeholder="Enter your middle name if you have one"></input>
+        <div class="input-wrapper">
+            <label>What is your first name?
+                <input type="text" id="first-name" placeholder="Enter your first name" required/>
+            </label>
+            <small class="error">Poop!</small>
+        </div>
+        <label>What is your surname?
+            <input type="text" id="surname" placeholder="Enter your surname" required/>
+        </label>
+        <label for="middle-name">What is your middle name? (optional)
+            <input type="text" id="middle-name" placeholder="Enter your middle name if you have one" />
+        </label>
     </section>
+    <!-- </form> -->
     <aside></aside>
 </article>
